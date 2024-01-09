@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リトルパラダイス</title>
+    <link rel="stylesheet" href="./content2.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <section>
+        <header id="TOP">
+            <!-- ナビゲーション -->
+            <div class="openbtn" id="target"></div>
+            <nav class="o_nav" id="nav_target">
+              <nav class="o_navi">
+                <ul>
+                  <li>
+                    <a class="o_navigation remove" href="../TOP.html"><img src="./img/nav_umi.png" alt="gazo">
+                      <p>水族館のいきもの</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="remove" href="../TOP.html"><img src="./img/nav_ivent.png" alt="gazo">
+                      <p>イベント</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="remove" href="../料金表/OKANE.html"><img src="./img/nav_shop.png" alt="gazo">
+                      <p>営業時間・料金</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="remove" href="../フロアマップ/MAP.html"><img src="./img/nav_map.png" alt="gazo">
+                      <p>フロアマップ</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="remove" href="../TOP.html"><img src="./img/nav_acsess.png" alt="gazo">
+                      <p>アクセス</p>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </nav>
+            <!-- /* ナビゲーションおわり */ -->
+
+        <main class="TOP">
+        <div class="f1_main">
+            <div class="gazo"></div>
+            <div class="nami"></div>
+       </div>
+        </main>
+
+        <div class="o_sec_main_title">
+            <img src="./img/hugu.png" alt="hugu" alt="sango_r" class="sango2">
+            <h2 class="main_title">みどころ</h2>
+            <img src="./img/hugu.png" alt="hugu" class="sango">
+        </div>
+        
+        <div class="f1_sub">
+
+                <h2>色とりどりの生き物たちが生活する姿をみていただくために、水槽内の仕組みを工夫してみました。
+                    海に抱かれるような海中散歩をここでお楽しみください。</h2>
+
+            <img src="./img/manta.jpg" alt="suiso">
+            <h3>ダイナミックラグーン</h3>
+            <p>ここは青と白が混じりあう世界。透き通った青い海には、白い砂の海底が広がっています。
+                点在するサンゴの隙間（すきま）を小さな魚たちが行き交い、大きなエイが翔ぶように泳ぐ。光降り注ぐ海のオアシスがここにあります。大水槽「サンシャインラグーン」は、アクアスタッフが思い描く、浅いサンゴ礁をイメージしてつくりあげました。南国の浅い海に広がる白い砂地。そこで繰り広げられる小さな魚たちの生命（いのち）
+                あふれる動きと優雅に泳ぐ大きなエイをテーマにした水槽です。</p>
+        </div>
+
+        <div class="f1_boxarea">
+            <div class="f1_box">
+                <img src="./img/sakana_b.jpg" alt="gazo">
+                <div class="f1_box_text">
+                    <h3>生命の躍動</h3>
+                    <p>生き残るために群れ、子孫を残すために群れる。何千何万という生命（いのち）が集まり、刻々と形を変えていく。イワシの群れ、それはまさに生命の塊（かたまり）。イワシの動き、それはまさに生命の躍動なのです。</p>
+                </div>
+            </div>
+
+            <div class="f1_box">
+                <img src="./img/nimo.jpg" alt="gazo">
+                <div class="f1_box_text">
+                    <h3>南国の海</h3>
+                    <p>水草につくキラキラとした気泡が酸素の泡だと知っていますか？水草は光を浴びて二酸化炭素を酸素に変え、水の汚れから栄養分を作り出します。真珠のように輝く泡は、水草によって浄化が行われた証拠なのです。</p>
+                </div>
+            </div>
+
+            <div class="f1_box">
+                <img src="./img/kame_w.jpg" alt="gazo" class="f2_kame">
+                <div class="f1_box_text">
+                    <h3>海ののんびりやさん</h3>
+                    <p>日本でよくみられる種を含めてウミガメは全世界の暖かい海に生息しています。四肢は上下に平たく、特に泳ぐ時に大活躍するヒレのような前脚は長大。前脚をオールのように使って水をかき、後ろ脚で舵をとるといった泳ぎ方をします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./img/sango_b.png" alt="sango_b" class="f_sango_b">
+        <img src="./img/pengin.png" alt="pengin" class="f_pengin">
+        <img src="./img/pengin.png" alt="pengin" class="f_pengin2">
+        <div class="f1_footer">
+            <div class="logo"></div>
+       </div>
+    </footer>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        
+// ナビゲーション
+$(function () {
+  $('#target').click(() => {
+    $('#target').toggleClass('active');
+    $('#nav_target').toggleClass('nav_active');
+  });
+  // ナビ内リンクでジャンプ時、メニューを閉じる
+
+  $('.remove').click(() => {
+    $('#target').removeClass('active');
+    $('#nav_target').removeClass('nav_active');
+  });
+});
+    </script>
+</body>
+</html>

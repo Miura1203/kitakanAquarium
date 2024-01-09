@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フレンドリースクエア</title>
+    <link rel="stylesheet" href="./content3.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+        <header id="TOP">
+            <!-- ナビゲーション -->
+            <div class="openbtn" id="target"></div>
+            <nav class="o_nav" id="nav_target">
+              <nav class="o_navi">
+                <ul>
+                  <li>
+                    <a class="o_navigation remove" href="../TOP.html"><img src="./img/nav_umi.png" alt="gazo">
+                      <p>水族館のいきもの</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="remove" href="../TOP.html"><img src="./img/nav_ivent.png" alt="gazo">
+                      <p>イベント</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="remove" href="../料金表/OKANE.html"><img src="./img/nav_shop.png" alt="gazo">
+                      <p>営業時間・料金</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="remove" href="../フロアマップ/MAP.html"><img src="./img/nav_map.png" alt="gazo">
+                      <p>フロアマップ</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="remove" href="../TOP.html"><img src="./img/nav_acsess.png" alt="gazo">
+                      <p>アクセス</p>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </nav>
+            <!-- /* ナビゲーションおわり */ -->
+
+        <main class="TOP">
+        <div class="f1_main">
+            <div class="gazo"></div>
+            <div class="nami"></div>
+       </div>
+        </main>
+
+        <div class="o_sec_main_title">
+            <img src="./img/hugu.png" alt="hugu" alt="sango_r" class="sango2">
+            <h2 class="main_title">みどころ</h2>
+            <img src="./img/hugu.png" alt="hugu" class="sango">
+        </div>
+        
+        <div class="f1_sub">
+
+                <h2>エレベーターを降りると都会の、しかもビルの高層に、ヤシの木が茂る異空間が広がります。どこまでも広がる青空の下には、ペンギンが泳ぎ回る場所があります。アシカたちが砂浜でくつろいだり、
+                    青い空をはばたくように泳いだりと、のびのびと生活している姿をご覧いただけます。</h2>
+
+            <img src="./img/c3_top.jpg" alt="suiso">
+            <h3>フレンドリーラグーン</h3>
+            <p>エレベーターを降りると都会の、しかもビルの高層に、ヤシの木が茂る異空間が広がります。どこまでも広がる青空の下には、ペンギンが泳ぎ回る場所があります。アシカたちが砂浜でくつろいだり、
+                青い空をはばたくように泳いだりと、のびのびと生活している姿をご覧いただけます。</p>
+        </div>
+
+        <div class="f1_boxarea">
+            <div class="f1_box">
+                <img src="./img/c3_azarashi.jpg" alt="gazo">
+                <div class="f1_box_text">
+                    <h3>キタカンアクアリング</h3>
+                    <p>太陽の光で照らされ、キラキラ光る水の揺らめきは見られるのも屋外水槽ならでは。夕方にはアシカがプールに戻ってしまうため、この水槽を楽しむなら昼間がおすすめです。</p>
+                </div>
+            </div>
+
+            <div class="f1_box">
+                <img src="./img/c3_pengin.jpg" alt="gazo">
+                <div class="f1_box_text">
+                    <h3>ペンギン広場</h3>
+                    <p>野生のケープペンギンが棲む南アフリカ・ケープタウンには砂浜が広がり、近くには草原もあります。ペンギンたちの暮らしが垣間見える水槽です。巣穴もあるので、ケープペンギンの夫婦が仲良く暮らす様子や、子育ての風景を見ることができるかもしれません。</p>
+                </div>
+            </div>
+
+            <div class="f1_box">
+                <img src="./img/c3_iruka.jpg" alt="gazo" class="f2_kame">
+                <div class="f1_box_text">
+                    <h3>仲良しイルカタイム</h3>
+                    <p>水族館で1・2を争う人気者イルカ。そんな動物アイドルっていったいどんな生きものなのでしょう？みんなのアイドル、イルカについてもっと学んで、水族館で大接近してみませんか。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./img/sango_b.png" alt="sango_b" class="f_sango_b">
+        <img src="./img/iruka02.png" alt="pengin" class="f_iruka">
+        <img src="./img/iruka01.png" alt="pengin" class="f_iruka2">
+        <div class="f1_footer">
+            <div class="logo"></div>
+       </div>
+    </footer>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        
+// ナビゲーション
+$(function () {
+  $('#target').click(() => {
+    $('#target').toggleClass('active');
+    $('#nav_target').toggleClass('nav_active');
+  });
+  // ナビ内リンクでジャンプ時、メニューを閉じる
+
+  $('.remove').click(() => {
+    $('#target').removeClass('active');
+    $('#nav_target').removeClass('nav_active');
+  });
+});
+    </script>
+</body>
+</html>
