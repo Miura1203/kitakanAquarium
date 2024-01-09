@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+/* 共通パーツ */
+/* 幅指定 */
+section {
+    width: 100%;
+}
+
+.m-ivent {
+    position: relative;
+    width: 35%;
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(40, 40, 72);
+    border: 5px solid #737b92;
+    border-radius: 10px;
+
+    margin-top: 80px;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    color: #fff;
+}
+
+.m-ivent-back {
+    background-image: url(./深海背景\ \(1\).png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+
+.m-kurage1 {
+    position: fixed;
+    top: 30px;
+    right: 5%;
+
+    animation-name: yurayura;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+    z-index: 99;
+    width: 200px;
+    height: 200px;
+
+    background-image: url(./img/くらげ01.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.m-kurage2 {
+    position: fixed;
+    bottom: 100px;
+    left: 5%;
+
+    animation-name: yurayura2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+    z-index: 99;
+    width: 200px;
+    height: 200px;
+
+    background-image: url(./img/くらげ01.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@keyframes yurayura {
+    0% {
+        transform: translateY(10px);
+    }
+
+    5% {
+        background-image: url(./img/くらげ02.png);
+    }
+
+    10% {
+        background-image: url(./img/くらげ03.png);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+        background-image: url(./img/くらげ01.png);
+    }
+
+    55% {
+        background-image: url(./img/くらげ02.png);
+    }
+
+    60% {
+        background-image: url(./img/くらげ03.png);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+        background-image: url(./img/くらげ01.png);
+    }
+
+
+}
+
+@keyframes yurayura2 {
+    0% {
+        transform: translateY(-10px);
+        /* background-image: url(./img/くらげ01.png); */
+    }
+
+    25% {
+        transform: translateY(10px);
+        background-image: url(./img/くらげ01.png);
+
+    }
+
+    30% {
+        background-image: url(./img/くらげ02.png);
+    }
+
+    35% {
+        background-image: url(./img/くらげ03.png);
+
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(10px);
+        background-image: url(./img/くらげ01.png);
+    }
+
+    80% {
+        background-image: url(./img/くらげ02.png);
+
+    }
+
+    85% {
+        background-image: url(./img/くらげ03.png);
+
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+h2 {
+    background-color: #737b92;
+    width: fit-content;
+    font-size: 32px;
+    margin: 16px auto;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+p {
+    padding: 40px 0;
+}
+
+/* 共通パーツおわり */
+/* トップ */
+#m-ivent-title {
+    margin-bottom: 100px;
+}
+
+.m-ivent-top {
+    margin: 0 auto;
+    background: none;
+    border: 0;
+    height: 50vh;
+}
+
+.m-ivent-top p {
+    font-size: 20px;
+}
+
+.m-ivent-suizokukan {
+    width: 100%;
+    height: 400px;
+    background-image: url(./img/yoru_logo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.m-ivent-pop {
+    font-size: 15px;
+    color: gold;
+}
+
+/* イベント 夜の水族館 */
+/* .m-ivent-night{
+    padding-bottom: 200px;
+} */
+
+/* 当館の深海魚たち */
+.m-sinkaigyo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-sinkaigyo {
+    background-image: url(./img/メンダコ_01.png);
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+h3 {
+    margin-top: 16px;
+}
+
+.m-sinkaigyo02 {
+    background-image: url(./img/くりおね.png);
+}
+
+.m-sinkaigyo03 {
+    background-image: url(./img/無題474_20231114124128.png);
+}
+
+/* 料金表 */
+.m-ivent-money {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 8px 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.m-ivent-money p {
+    color: #000;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.m-ivent-money h6 {
+    color: #000;
+}
+
+#m-ivent-money h3 {
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width:1050px) {
+    h2{
+        font-size: 30px;
+    }
+    .m-ivent {
+        width: 80%;
+    }
+
+    .m-ivent-suizokukan {
+        margin: 0 auto;
+        width: 350px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:600px){
+    .m-ivent {
+        width: 100%;
+    }
+    .m-ivent-suizokukan {
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+    }
+}
+/* フッター */  
+footer{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 15vh;
+background-color: #004384;
+margin-top: 4rem;
+}
+footer div{
+    background-image: url(./img/aquariumlogo_w.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 15vh;
+}

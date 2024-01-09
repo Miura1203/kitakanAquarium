@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="TOP">
+       <!-- ナビゲーション -->
+       <div class="openbtn" id="target"></div>
+       <nav class="o_nav" id="nav_target">
+         <nav class="o_navi">
+           <ul>
+             <li>
+               <a class="o_navigation remove" href="../TOP.html"><img src="./img/nav_umi.png" alt="gazo">
+                 <p>水族館のいきもの</p>
+               </a>
+             </li>
+             <li>
+               <a class="remove" href="../TOP.html"><img src="./img/nav_ivent.png" alt="gazo">
+                 <p>イベント</p>
+               </a>
+             </li>
+             <li>
+               <a class="remove" href="../料金表/OKANE.html"><img src="./img/nav_shop.png" alt="gazo">
+                 <p>営業時間・料金</p>
+               </a>
+             </li>
+             <li>
+               <a class="remove" href="../フロアマップ/MAP.html"><img src="./img/nav_map.png" alt="gazo">
+                 <p>フロアマップ</p>
+               </a>
+             </li>
+             <li>
+               <a class="remove" href="../TOP.html"><img src="./img/nav_acsess.png" alt="gazo">
+                 <p>アクセス</p>
+               </a>
+             </li>
+           </ul>
+         </nav>
+       </nav>
+       <!-- /* ナビゲーションおわり */ -->
+
+
+    </header>
+
+    <section>
+        <div class="huroamap">
+            <div>
+                <h1>フロアマップ</h1>
+            </div>
+            <div class="map">
+                <img src="./img/map1.png" alt="">
+                <img src="./img/map 2.png" alt="">
+                <img src="./img/map 3.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <nav class="anago"><img src="./img/chinanago.png" alt=""></nav>
+        <nav class="kusa"><img src="./img/kaiso01.png" alt=""></nav>
+        <nav class="kusa2"><img src="./img/kaiso02.png" alt=""></nav>
+
+        <div class="f1_footer">
+            <div class="logo flogo"></div>
+       </div>
+    </footer>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>   
+        // ナビゲーション
+        $(function () {
+          $('#target').click(() => {
+            $('#target').toggleClass('active');
+            $('#nav_target').toggleClass('nav_active');
+          });
+          // ナビ内リンクでジャンプ時、メニューを閉じる
+        
+          $('.remove').click(() => {
+            $('#target').removeClass('active');
+            $('#nav_target').removeClass('nav_active');
+          });
+        });
+            </script>
+</body>
+</html>
